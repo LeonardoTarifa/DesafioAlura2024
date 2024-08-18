@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+:root{
+    --fonte:"Inter", sans-serif;
+    --cor-azul:#0A3871;
+}
+
+*{
+    font-family: var(--fonte);
+
+}
+
+body{
+    background-color: #E5E5E5;
+    margin: 0%;
+}
+
+.logoAlura{
+    height: 48px;
+    margin: 40px 0px 0px 40px;
+}
+
+main{
+    display: flex;
+    gap: 40px;
+}
+
+.sessaoPrincipal{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 100px;
+    width: 90%;
+}
+
+.digitarTexto{
+    background-color: #E5E5E5;
+    width: 100%;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--cor-azul);
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.digitarTexto::placeholder{
+    color: var(--cor-azul);
+}
+
+.digitarTexto:focus{
+    outline: none;
+}
+
+.informacao{
+    display: flex;
+    align-items: center;
+}
+
+.informacao__logo{
+    height: 16px;
+}
+
+.informacao__texto{
+    font-size: 12px;
+}
+
+.botoes{
+    display: flex;
+    gap: 24px;
+}
+
+.botoes__criptografar{
+    font-size: 16px;
+    width: 50%;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--cor-azul);
+    color: white;
+}
+
+.botoes__criptografar:hover{
+    background-color:rgb(7, 63, 168) ;
+    cursor: pointer;
+}
+
+.botoes__descriptografar{
+    font-size: 16px;
+    width: 50%;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+}
+
+.botoes__descriptografar:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sessaoSecundaria{
+    margin: 0px 3% 0px 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.receberTexto{
+    width: 100%;
+    border-radius: 12px;
+    background-color: white;
+    background-image: url(./Assets/pessoa.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 20%;
+    background-size: 60%;
+    border: none;
+    color: var(--cor-azul);
+    resize: none;
+    font-weight: 400;
+    font-size: 32px;
+    box-shadow:  0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.receberTexto:focus{
+    outline: none;
+}
+
+.copiar{
+    font-size: 16px;
+    border-radius: 24px;
+    height: 67px;
+    width: 80%;
+    position: absolute;
+    bottom: 49px;
+    visibility: hidden;
+}
+
+.copiar:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 180px;
+}
+
+.aviso__titulo{
+    color: var(--cor-azul);
+    text-align: center;
+}
+
+.aviso__paragrafo{
+    text-align: center; 
+}
+
+.rodape{
+    margin-top: 40px;
+    text-align: center;
+    background-color: var(--cor-azul);
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width: 1200px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sessaoPrincipal{
+        margin: 0px;
+              
+     }
+
+     .sessaoSecundaria{
+        width: 90%;
+     }
+
+     .botoes{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .botoes__criptografar{
+        width: 100%;
+     }
+
+     .botoes__descriptografar{
+        width: 100%;
+     }
+}

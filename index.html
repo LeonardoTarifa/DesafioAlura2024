@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criptografia</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./Assets/icone.ico"
+    </head>
+    <body>
+        <header>
+            <img class="logoAlura" src="./Assets/logo.png" alt="Logo da alura">
+        </header>
+        <main>
+            <section class="sessaoPrincipal">
+                <textarea class="digitarTexto" id="digitarTexto" rows="16" placeholder="Digite seu texto"></textarea>
+                <div class="informacao">
+                    <img class="informacao__logo" src="./Assets/alerta.png" alt="imagem de alerta">
+                    <p class="informacao__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button onclick="criptografarInformacao()" class="botoes__criptografar">Criptografar</button>
+                    <button onclick="descriptografarInformacao()" class="botoes__descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <section class="sessaoSecundaria">
+                <textarea class="receberTexto" id="receberTexto" readonly rows="20"></textarea>
+                <button onclick="copiarTexto()" id="btnCopiar" class="copiar">copiar</button>
+                <div class="aviso">
+                <h2 class="aviso__titulo" id="aviso__titulo">Nenhuma mensagem encontrada</h2>
+                <p class="aviso__paragrafo" id="aviso__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>Criado por Leonardo Tarifa Botelho <br> Desafio Alura no ano de 2024</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
